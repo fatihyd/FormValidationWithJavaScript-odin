@@ -10,6 +10,35 @@
 </head>
 
 <body>
+    <h1>enter your data</h1>
+    <form action="" novalidate>
+        <fieldset>
+            <legend>email</legend>
+            <input type="email" id="mail" class="mail input" name="mail" placeholder="enter your email..." required>
+            <span id="mail-error" class="error mail"></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>country</legend>
+            <label for="country">select a country...</label>
+            <select name="country" id="country" required>
+                <option value="ch">Switzerland</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="nl">The Netherlands</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>password</legend>
+            <input type="password" class="password input" placeholder="enter your password..." minlength="8" required>
+            <span id="password-error" class="error password"></span>
+            <input type="password" class="confirm input" placeholder="password again..." required>
+            <span id="confirm-error" class="error confirm"></span>
+        </fieldset>
+
+        <button type="submit">submit</button>
+    </form>
 
 </body>
 
